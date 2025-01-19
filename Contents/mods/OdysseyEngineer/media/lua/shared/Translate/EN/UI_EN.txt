@@ -1,0 +1,5 @@
+UI_EN = {
+
+    UI_trait_formerscout3 = "Former Scout",
+	UI_trait_formerscoutdesc3 = "Has skills in Trapping and Foraging. <br> +1 Trapping <br> +1 Foraging",	
+}

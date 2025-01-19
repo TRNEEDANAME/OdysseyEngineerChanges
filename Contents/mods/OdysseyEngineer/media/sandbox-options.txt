@@ -1,0 +1,75 @@
+VERSION = 1,
+
+option OdysseySOTOChanges.OdysseyRPOutdoorsmanBoredomReduction
+{
+    type = double,
+    default = 0.1,
+    min = 0,
+    max = 40,
+    page = OdysseySOTOChanges,
+    translation = OdysseyRPOutdoorsmanBoredomReduction,
+}
+
+option OdysseySOTOChanges.OdysseyRPOutdoorsmanCigStressReduction
+{
+    type = double,
+    default = 0.18,
+    min = 0,
+    max = 40,
+    page = OdysseySOTOChanges,
+    translation = OdysseyRPOutdoorsmanCigStressReduction,
+}
+
+option OdysseySOTOChanges.OdysseyRPOutdoorsmanUnhapynessReduction
+{
+    type = double,
+    default = 0.12,
+    min = 0,
+    max = 40,
+    page = OdysseySOTOChanges,
+    translation = OdysseyRPOutdoorsmanUnhapynessReduction,
+}
+
+option OdysseySOTOChanges.OdysseyRPOutdoorsmanStressReduction
+{
+    type = double,
+    default = 0.1,
+    min = 0,
+    max = 40,
+    page = OdysseySOTOChanges,
+    translation = OdysseyRPOutdoorsmanStressReduction,
+}
+
+option OdysseySOTOChanges.OdysseyRPOutdoorsmanStressCigReduction
+{
+    type = double,
+    default = 0.1,
+    min = 0,
+    max = 40,
+    page = OdysseySOTOChanges,
+    translation = OdysseyRPOutdoorsmanStressCigReduction,
+}
+
+option OdysseySOTOChanges.DoesOutdoorsmanReduceStress
+{
+    type = boolean,
+    default = true,
+    page = OdysseySOTOChanges,
+    translation = DoesOutdoorsmanReduceStress,
+}
+
+option OdysseySOTOChanges.DoesOutdoorsmanReduceStressCig
+{
+    type = boolean,
+    default = true,
+    page = OdysseySOTOChanges,
+    translation = DoesOutdoorsmanReduceStressCig,
+}
+
+option OdysseySOTOChanges.DoesOutdoorsmanReduceBoredom
+{
+    type = boolean,
+    default = true,
+    page = OdysseySOTOChanges,
+    translation = DoesOutdoorsmanReduceBoredom,
+}

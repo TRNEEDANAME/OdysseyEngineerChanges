@@ -1,0 +1,25 @@
+Sandbox_EN = {
+
+OdysseySOTOChanges = "Odyssey's Traits Changes",
+
+Sandbox_OdysseyRPOutdoorsmanBoredomReduction = "Reduction of boredom when outside with outdoorsman",
+Sandbox_OdysseyRPOutdoorsmanBoredomReduction_tooltip = "Reduction of boredom when outside with outdoorsman.",
+
+Sandbox_OdysseyRPOutdoorsmanUnhapynessReduction = "Reduction of unhapyness when outside with outdoorsman",
+Sandbox_OdysseyRPOutdoorsmanUnhapynessReduction_tooltip = "Reduction of unhapyness when outside with outdoorsman.",
+
+Sandbox_OdysseyRPOutdoorsmanStressReduction = "Reduction of stress when outside with outdoorsman",
+Sandbox_OdysseyRPOutdoorsmanStressReduction_tooltip = "Reduction of stress when outside with outdoorsman.",
+
+Sandbox_OdysseyRPOutdoorsmanCigStressReduction = "Reduction of cigarettes stress when outside with outdoorsman",
+Sandbox_OdysseyRPOutdoorsmanCigStressReduction_tooltip = "Reduction of cigarettes stress when outside with outdoorsman.",
+
+Sandbox_DoesOutdoorsmanReduceStress = "Does outdoorsman reduce stress when outside",
+Sandbox_DoesOutdoorsmanReduceStress_tooltip = "Reduce stress when outside with outdoorsman",
+
+Sandbox_DoesOutdoorsmanReduceUnhapyness = "Does outdoorsman reduce stress when outside",
+Sandbox_DoesOutdoorsmanReduceUnhapyness_tooltip = "Reduce stress when outside with outdoorsman",
+
+Sandbox_DoesOutdoorsmanReduceBoredom = "Does outdoorsman reduce boredom stress when outside",
+Sandbox_DoesOutdoorsmanReduceBoredom_tooltip = "Reduce boredom when outside with outdoorsman",
+}
