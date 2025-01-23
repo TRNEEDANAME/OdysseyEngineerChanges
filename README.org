@@ -1,4 +1,4 @@
 * README
 
-This mod is made for the [[Odyssey RP Server][https://discord.gg/XqPw5hPRUR]], it adds fire shells / 44 for the shotgun (engineer profession needed).
+This mod is made for the [[https://discord.gg/XqPw5hPRUR][Odyssey RP Server]], it adds fire shells / 44 for the shotgun (engineer profession needed).
 It also adds scrap weapons / metal patches (WIP)
