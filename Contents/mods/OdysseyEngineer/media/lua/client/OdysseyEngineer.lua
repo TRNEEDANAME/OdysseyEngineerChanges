@@ -24,13 +24,7 @@ function CorrectAmmoType(weapon)
     local ammo = weapon:getAmmoType()
     local listOfAmmos =
     {
-        "OdysseyExplo9mm",
-        "OdysseyExplo45",
-        "OdysseyExplo556",
-        "OdysseyExplo762",
         "OdysseyExploShells",
-        "OdysseyExplo223",
-        "OdysseyExplo308",
         "OdysseyExplo44",
     }
 
