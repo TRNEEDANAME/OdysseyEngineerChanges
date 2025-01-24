@@ -3,7 +3,7 @@ module Base
 
     /************************* AMMO ******************************/
 
-    item OdysseyEngineerBullets44
+    item TOCBullets44
     {
         DisplayCategory = Ammo,
         Count	=	3,
@@ -15,7 +15,7 @@ module Base
         WorldStaticModel = 9mmRounds,
     }
 
-	item OdysseyEngineerShotgunShells
+	item TOCShotgunShells
 	{
 	    DisplayCategory = Ammo,
 		Count	=	6,
@@ -28,7 +28,7 @@ module Base
 		WorldStaticModel = ShotGunShells,
 	}
 
-    item OdysseyEngineerShotgunShellsBox
+    item TOCShotgunShellsBox
     {
         DisplayCategory = Ammo,
         Weight	=	0.9,
@@ -43,7 +43,7 @@ module Base
 
     /*********************************************** GUNS **********************************/
 
-    item OdysseyEngineerShotgun
+    item TOCShotgun
 	{
 	    DisplayCategory = Weapon,
 		ImpactSound	=	null,
@@ -99,7 +99,7 @@ module Base
         ShellFallSound = JS2000ShotgunCartridgeFall,
         MetalValue = 45,
         TwoHandWeapon = TRUE,
-        AmmoBox = OdysseyEngineerShotgunShellsBox,
+        AmmoBox = TOCShotgunShellsBox,
         MaxAmmo = 4,
 		EquipSound = JS2000ShotgunEquip,
 		UnequipSound = JS2000ShotgunUnEquip,
@@ -110,7 +110,7 @@ module Base
         EjectAmmoSound = JS2000ShotgunEjectAmmo,
 		EjectAmmoStopSound = JS2000ShotgunEjectAmmoStop,
         RackSound = JS2000ShotgunRack,
-        AmmoType = Base.OdysseyEngineerShotgunShells,
+        AmmoType = Base.TOCShotgunShells,
         WeaponReloadType = shotgun,
         RackAfterShoot = TRUE,
         JamGunChance = 4,
@@ -124,7 +124,7 @@ module Base
         StopPower = 20,
 	}
 	
-    item OdysseyEngineerShotgun2
+    item TOCShotgun2
 	{
 	    DisplayCategory = Weapon,
 		ImpactSound	=	null,
@@ -180,7 +180,7 @@ module Base
         ShellFallSound = JS2000ShotgunCartridgeFall,
         MetalValue = 45,
         TwoHandWeapon = TRUE,
-        AmmoBox = OdysseyEngineerShotgunShellsBox,
+        AmmoBox = TOCShotgunShellsBox,
         MaxAmmo = 7,
 		EquipSound = JS2000ShotgunEquip,
 		UnequipSound = JS2000ShotgunUnEquip,
@@ -191,7 +191,7 @@ module Base
         EjectAmmoSound = JS2000ShotgunEjectAmmo,
 		EjectAmmoStopSound = JS2000ShotgunEjectAmmoStop,
         RackSound = JS2000ShotgunRack,
-        AmmoType = Base.OdysseyEngineerShotgunShells,
+        AmmoType = Base.TOCShotgunShells,
         WeaponReloadType = shotgun,
         RackAfterShoot = TRUE,
         JamGunChance = 4,
@@ -205,7 +205,7 @@ module Base
         StopPower = 20,
 	}
 	
-	item OdysseyEngineerShotgun2Bayonet
+	item TOCShotgun2Bayonet
     {
         DisplayCategory = Weapon,
         MaxRange	=	1.37,
@@ -242,7 +242,7 @@ module Base
         BaseSpeed = 0.9,
         DamageCategory = Slash,
         DamageMakeHole = TRUE,
-        AmmoType = Base.OdysseyEngineerShotgunShells,
+        AmmoType = Base.TOCShotgunShells,
 		EnduranceMod	=	1.2,
         BreakSound  =   GardenForkBreak,
         HitFloorSound	=	GardenForkHit,
@@ -259,7 +259,7 @@ module Base
         AttachmentType = Rifle,
     }
 	
-	item OdysseyEngineerShotgunSemi
+	item TOCShotgunSemi
 	{
 	    DisplayCategory = Weapon,
 		ImpactSound	=	null,
@@ -315,7 +315,7 @@ module Base
         ShellFallSound = JS2000ShotgunCartridgeFall,
         MetalValue = 45,
         TwoHandWeapon = TRUE,
-        AmmoBox = OdysseyEngineerShotgunShellsBox,
+        AmmoBox = TOCShotgunShellsBox,
         MaxAmmo = 4,
 		EquipSound = JS2000ShotgunEquip,
 		UnequipSound = JS2000ShotgunUnEquip,
@@ -326,7 +326,7 @@ module Base
         EjectAmmoSound = JS2000ShotgunEjectAmmo,
 		EjectAmmoStopSound = JS2000ShotgunEjectAmmoStop,
         RackSound = JS2000ShotgunRack,
-        AmmoType = Base.OdysseyEngineerShotgunShells,
+        AmmoType = Base.TOCShotgunShells,
         WeaponReloadType = shotgunsemi,
         JamGunChance = 6,
         AttachmentType = Rifle,
@@ -340,7 +340,7 @@ module Base
         StopPower = 20,
 	}
 	
-	item OdysseyEngineerShotgunSemi2
+	item TOCShotgunSemi2
 	{
 	    DisplayCategory = Weapon,
 		ImpactSound	=	null,
@@ -396,7 +396,7 @@ module Base
         ShellFallSound = JS2000ShotgunCartridgeFall,
         MetalValue = 45,
         TwoHandWeapon = TRUE,
-        AmmoBox = OdysseyEngineerShotgunShellsBox,
+        AmmoBox = TOCShotgunShellsBox,
         MaxAmmo = 7,
 		EquipSound = JS2000ShotgunEquip,
 		UnequipSound = JS2000ShotgunUnEquip,
@@ -407,7 +407,7 @@ module Base
         EjectAmmoSound = JS2000ShotgunEjectAmmo,
 		EjectAmmoStopSound = JS2000ShotgunEjectAmmoStop,
         RackSound = JS2000ShotgunRack,
-        AmmoType = Base.OdysseyEngineerShotgunShells,
+        AmmoType = Base.TOCShotgunShells,
         WeaponReloadType = shotgunsemi,
         JamGunChance = 6,
         AttachmentType = Rifle,
@@ -421,7 +421,7 @@ module Base
         StopPower = 20,
 	}
 	
-	item OdysseyEngineerShotgunSawnoff
+	item TOCShotgunSawnoff
 	{
 		DisplayCategory = Weapon,
 		ImpactSound	=	null,
@@ -482,13 +482,13 @@ module Base
         ShellFallSound = SawnOffJS2000ShotgunCartridgeFall,
         MetalValue = 35,
         TwoHandWeapon = TRUE,
-        AmmoBox = OdysseyEngineerShotgunShellsBox,
+        AmmoBox = TOCShotgunShellsBox,
         MaxAmmo = 4,
 		EquipSound = SawnOffJS2000ShotgunEquip,
 		UnequipSound = SawnOffJS2000ShotgunUnEquip,
         InsertAmmoSound = SawnOffJS2000ShotgunInsertAmmo,
         RackSound = SawnOffJS2000ShotgunRack,
-        AmmoType = Base.OdysseyEngineerShotgunShells,
+        AmmoType = Base.TOCShotgunShells,
         WeaponReloadType = shotgun,
         ModelWeaponPart = ShellHolder ShellHolder shellholder shellholder,
 		ModelWeaponPart = ShellStraps ShellLoops_Shotgun bulletloops bulletloops,
@@ -502,7 +502,7 @@ module Base
 	}
 
 	
-	item OdysseyEngineerShotgunSawnoffNoStock
+	item TOCShotgunSawnoffNoStock
 	{
 		DisplayCategory = Weapon,
 		ImpactSound	=	null,
@@ -563,13 +563,13 @@ module Base
         ShellFallSound = SawnOffJS2000ShotgunCartridgeFall,
         MetalValue = 35,
         TwoHandWeapon = TRUE,
-        AmmoBox = OdysseyEngineerShotgunShellsBox,
+        AmmoBox = TOCShotgunShellsBox,
         MaxAmmo = 4,
 		EquipSound = SawnOffJS2000ShotgunEquip,
 		UnequipSound = SawnOffJS2000ShotgunUnEquip,
         InsertAmmoSound = SawnOffJS2000ShotgunInsertAmmo,
         RackSound = SawnOffJS2000ShotgunRack,
-        AmmoType = Base.OdysseyEngineerShotgunShells,
+        AmmoType = Base.TOCShotgunShells,
         WeaponReloadType = shotgun,
 		ModelWeaponPart = ShellHolder ShellHolder shellholder shellholder,
         RackAfterShoot = TRUE,
@@ -579,7 +579,7 @@ module Base
 		Tags = BlockSling;BlockIrons,
 	}
 	
-	item OdysseyEngineerDoubleBarrelShotgun
+	item TOCDoubleBarrelShotgun
     {
         DisplayCategory = Weapon,
         ImpactSound	=	null,
@@ -634,7 +634,7 @@ module Base
         BreakSound  =   DoubleBarrelShotgunBreak,
         MetalValue = 45,
         TwoHandWeapon = TRUE,
-        AmmoBox = OdysseyEngineerShotgunShellsBox,
+        AmmoBox = TOCShotgunShellsBox,
         MaxAmmo = 2,
 		EquipSound = DoubleBarrelShotgunEquip,
 		UnequipSound = DoubleBarrelShotgunUnEquip,
@@ -645,7 +645,7 @@ module Base
 		EjectAmmoStartSound = DoubleBarrelShotgunEjectAmmoStart,
 		EjectAmmoStopSound = DoubleBarrelShotgunEjectAmmoStop,
         ShellFallSound = DoubleBarrelShotgunCartridgeFall,
-        AmmoType = Base.OdysseyEngineerShotgunShells,
+        AmmoType = Base.TOCShotgunShells,
         WeaponReloadType = breechloader,
 		ModelWeaponPart = ShellStraps ShellLoops bulletloops bulletloops,
 		ModelWeaponPart = Sling Sling_Doublebarrel sling sling,
@@ -659,7 +659,7 @@ module Base
         StopPower = 40,
     }
 	
-	item OdysseyEngineerDoubleBarrelShotgunSawnoff
+	item TOCDoubleBarrelShotgunSawnoff
     {
 		DisplayCategory = Weapon,
         ImpactSound	=	null,
@@ -712,7 +712,7 @@ module Base
         BreakSound  =   SawnOffDoubleBarrelShotgunBreak,
         MetalValue = 45,
         TwoHandWeapon = TRUE,
-        AmmoBox = OdysseyEngineerShotgunShellsBox,
+        AmmoBox = TOCShotgunShellsBox,
         MaxAmmo = 2,
 		EquipSound = SawnOffDoubleBarrelShotgunEquip,
 		UnequipSound = SawnOffDoubleBarrelShotgunUnEquip,
@@ -723,7 +723,7 @@ module Base
 		EjectAmmoStartSound = SawnOffDoubleBarrelShotgunEjectAmmoStart,
 		EjectAmmoStopSound = SawnOffDoubleBarrelShotgunEjectAmmoStop,
         ShellFallSound = SawnOffDoubleBarrelShotgunCartridgeFall,
-        AmmoType = Base.OdysseyEngineerShotgunShells,
+        AmmoType = Base.TOCShotgunShells,
         WeaponReloadType = breechloader,
 		ModelWeaponPart = ShellStraps ShellLoops bulletloops bulletloops,
         JamGunChance = 0,
@@ -736,7 +736,7 @@ module Base
 		Tags = BlockSling;BlockIrons,
         }
 	
-	item OdysseyEngineerDoubleBarrelShotgunSawnoffNoStock
+	item TOCDoubleBarrelShotgunSawnoffNoStock
     {
 		DisplayCategory = Weapon,
         ImpactSound	=	null,
@@ -789,7 +789,7 @@ module Base
         BreakSound  =   SawnOffDoubleBarrelShotgunBreak,
         MetalValue = 45,
         TwoHandWeapon = TRUE,
-        AmmoBox = OdysseyEngineerShotgunShellsBox,
+        AmmoBox = TOCShotgunShellsBox,
         MaxAmmo = 2,
 		EquipSound = SawnOffDoubleBarrelShotgunEquip,
 		UnequipSound = SawnOffDoubleBarrelShotgunUnEquip,
@@ -800,7 +800,7 @@ module Base
 		EjectAmmoStartSound = SawnOffDoubleBarrelShotgunEjectAmmoStart,
 		EjectAmmoStopSound = SawnOffDoubleBarrelShotgunEjectAmmoStop,
         ShellFallSound = SawnOffDoubleBarrelShotgunCartridgeFall,
-        AmmoType = Base.OdysseyEngineerShotgunShells,
+        AmmoType = Base.TOCShotgunShells,
         WeaponReloadType = breechloader,
         JamGunChance = 0,
         AttachmentType = Holster,
@@ -812,7 +812,7 @@ module Base
 		Tags = BlockSling;BlockIrons,
         }
 		
-	item OdysseyEngineerSpas12
+	item TOCSpas12
     {
 		DisplayCategory = Weapon,
 		ImpactSound	=	null,
@@ -877,12 +877,12 @@ module Base
         BreakSound = M14Break,
         TwoHandWeapon = TRUE,
         MetalValue = 45,
-        AmmoType = Base.OdysseyEngineerShotgunShells,
+        AmmoType = Base.TOCShotgunShells,
         WeaponReloadType = shotgunsemi,
         JamGunChance = 5,
         AttachmentType = Rifle,
         FireMode = Single,
-        AmmoBox = OdysseyEngineerShotgunShellsBox,
+        AmmoBox = TOCShotgunShellsBox,
         MaxAmmo = 7,
         ModelWeaponPart = ChokeTubeFull ChokeTube choketube choketube,
         ModelWeaponPart = ChokeTubeImproved ChokeTube choketube choketube,
@@ -895,7 +895,7 @@ module Base
         StopPower = 20,
 	}
 	
-	item OdysseyEngineerSpas12Folded
+	item TOCSpas12Folded
     {
 		DisplayCategory = Weapon,
 		ImpactSound	=	null,
@@ -960,12 +960,12 @@ module Base
         BreakSound = M14Break,
         TwoHandWeapon = TRUE,
         MetalValue = 45,
-        AmmoType = Base.OdysseyEngineerShotgunShells,
+        AmmoType = Base.TOCShotgunShells,
         WeaponReloadType = shotgunsemi,
         JamGunChance = 5,
         AttachmentType = Rifle,
         FireMode = Single,
-        AmmoBox = OdysseyEngineerShotgunShellsBox,
+        AmmoBox = TOCShotgunShellsBox,
         MaxAmmo = 7,
         ModelWeaponPart = ChokeTubeFull ChokeTube choketube choketube,
         ModelWeaponPart = ChokeTubeImproved ChokeTube choketube choketube,
@@ -978,7 +978,7 @@ module Base
         StopPower = 20,
 		}
 		
-	item OdysseyEngineerShotgunSilent
+	item TOCShotgunSilent
 	{
 	    DisplayCategory = Weapon,
 		ImpactSound	=	null,
@@ -1034,7 +1034,7 @@ module Base
         ShellFallSound = JS2000ShotgunCartridgeFall,
         MetalValue = 45,
         TwoHandWeapon = TRUE,
-        AmmoBox = OdysseyEngineerShotgunShellsBox,
+        AmmoBox = TOCShotgunShellsBox,
         MaxAmmo = 4,
 		EquipSound = JS2000ShotgunEquip,
 		UnequipSound = JS2000ShotgunUnEquip,
@@ -1045,7 +1045,7 @@ module Base
         EjectAmmoSound = JS2000ShotgunEjectAmmo,
 		EjectAmmoStopSound = JS2000ShotgunEjectAmmoStop,
         RackSound = JS2000ShotgunRack,
-        AmmoType = Base.OdysseyEngineerShotgunShells,
+        AmmoType = Base.TOCShotgunShells,
         WeaponReloadType = shotgunsemi,
         ModelWeaponPart = ShellHolder ShellHolder shellholder shellholder,
 		ModelWeaponPart = ShellStraps ShellLoops_Shotgun bulletloops bulletloops,
@@ -1057,7 +1057,7 @@ module Base
         StopPower = 20,
 	}
 
-    item OdysseyEngineerPistol3
+    item TOCPistol3
     {
         DisplayCategory = Weapon,
         ImpactSound	=	null,
@@ -1139,7 +1139,7 @@ module Base
         StopPower = 9,
     }
 
-    item OdysseyEngineerRevolver
+    item TOCRevolver
     {
         DisplayCategory = Weapon,
         ImpactSound	=	null,
@@ -1219,7 +1219,7 @@ module Base
         StopPower = 9,
     }
 
-    item OdysseyEngineerRevolver_Long
+    item TOCRevolver_Long
     {
         DisplayCategory = Weapon,
         ImpactSound	=	null,

@@ -2,9 +2,9 @@ module Base
 {
     recipe Place Dragon Breath Shells in Box
     {
-        OdysseyEngineerShotgunShells=40,
+        TOCShotgunShells=40,
 
-        Result:OdysseyEngineerShotgunShellsBox,
+        Result:TOCShotgunShellsBox,
         Sound:BoxOfRoundsOpenOne,
         Time:15.0,
     }

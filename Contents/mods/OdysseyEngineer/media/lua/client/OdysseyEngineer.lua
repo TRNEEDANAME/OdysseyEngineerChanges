@@ -4,7 +4,7 @@
 ---@param player IsoPlayer
 ---@param weapon HandWeapon
 --- We check that the current weapon is a gun, and that the ammoType is correct
-function OdysseyEngineerCheckGun(player, weapon)
+function TOCCheckGun(player, weapon)
     --- We get the ammoType
     local ammo = weapon:getAmmoType()
     local isAmmoValid = CorrectAmmoType(weapon)
@@ -36,25 +36,25 @@ function CorrectAmmoType(weapon)
 end
 
 ---@param weapon HandWeapon
---- Make the gun jam, reduce condition by `SandboxVars.OdysseyEngineer.ConditionReduction` amount
+--- Make the gun jam, reduce condition by `SandboxVars.TOC.ConditionReduction` amount
 function SetGunStuff(weapon)
     --- Set the gun to be jammed
     weapon:setJammed(true)
     local condition = weapon:getCondition()
     --- If the condition is less than the reduction, we set the condition to 0 to avoid fuckery
-    if (condition < SandboxVars.OdysseyEngineer.ConditionReduction) then
+    if (condition < SandboxVars.TOC.ConditionReduction) then
         weapon:setCondition(0)
     else
-        weapon:setCondition(condition - SandboxVars.OdysseyEngineer.ConditionReduction)
+        weapon:setCondition(condition - SandboxVars.TOC.ConditionReduction)
     end
 end
 
 ---@param player IsoPlayer
 ---@param zombie IsoZombie
 --[[ We get the `aimLevel` and `reloadLevel` of the player, the pos of said player, and the pos of the zed we hit.
-We then use `SandboxVars.OdysseyEngineer.ReloadLevel` to check if the player is high enough to only have `SandboxVars.OdysseyEngineer.ChanceToJam` to jam
+We then use `SandboxVars.TOC.ReloadLevel` to check if the player is high enough to only have `SandboxVars.TOC.ChanceToJam` to jam
 Else, garanteed chance of jam & reduced condition as set by the function `SetGunStuff(weapon)`.
-This also use `SandboxVars.OdysseyEngineer.AimingLevel` to check wether the fire start at `PlayerPos` or `ZombiePos`]]--
+This also use `SandboxVars.TOC.AimingLevel` to check wether the fire start at `PlayerPos` or `ZombiePos`]]--
 function StartFunc(player, zombie)
     --- We check the aiming level
     local aimLevel = player:getPerkLevel(Perks.Aiming)
@@ -69,21 +69,21 @@ function StartFunc(player, zombie)
     local ZombiePosX = zombie:getLlX()
     local ZombiePosY = zombie:getLlY()
     local ZombiePosZ = zombie:getLlZ()
-    if (OdysseyEngineerCheckGun(player, weapon) and CorrectAmmoType(weapon))
+    if (TOCCheckGun(player, weapon) and CorrectAmmoType(weapon))
     then
-        if (reloadLevel < SandboxVars.OdysseyEngineer.ReloadLevel) then
+        if (reloadLevel < SandboxVars.TOC.ReloadLevel) then
             --- We set the gun to be jammed
             SetGunStuff(player:getPrimaryHandItem())
         --- Else, only a certain chance to jamm
         else
             local HundredChance = ZombRand(100)
-            if (HundredChance <= SandboxVars.OdysseyEngineer.ChanceToJam) then
+            if (HundredChance <= SandboxVars.TOC.ChanceToJam) then
                 SetGunStuff(player:getPrimaryHandItem())
             end
         end
 
         --- We check if the aiming level is high enough, else toasty bunkies
-        if (aimLevel <= SandboxVars.OdysseyEngineer.AimingLevel) then
+        if (aimLevel <= SandboxVars.TOC.AimingLevel) then
             StartFire(PlayerPosX, PlayerPosY, PlayerPosZ);
         else
             StartFire(ZombiePosX, ZombiePosY, ZombiePosZ);
