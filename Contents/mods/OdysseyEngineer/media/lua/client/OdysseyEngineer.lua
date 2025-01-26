@@ -95,7 +95,7 @@ function StartFire(posX, posY, posZ)
     local square = cell:getGridSquare(ZombRand(posX-radius*2, posX+radius*2), ZombRand(posY-radius*2, posY+radius*2), posZ);
     local randomduration = {150,200,250,300}
     if square ~= nil and not square:haveFire() then
-        IsoFireManager.StartFire(square:getCell(), square, true, 100, randomduration[ZombRand(4)+1]);   
+        IsoFireManager.StartFire(square:getCell(), square, true, 100, randomduration[ZombRand(4)+1]);
     end
 end
 
