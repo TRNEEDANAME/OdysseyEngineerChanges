@@ -69,8 +69,7 @@ function StartFunc(player, zombie)
     local ZombiePosX = zombie:getLlX()
     local ZombiePosY = zombie:getLlY()
     local ZombiePosZ = zombie:getLlZ()
-    if (TOCCheckGun(player, weapon) and CorrectAmmoType(weapon))
-    then
+    if (TOCCheckGun(player, weapon) and CorrectAmmoType(weapon)) then
         if (reloadLevel < SandboxVars.TOC.ReloadLevel) then
             --- We set the gun to be jammed
             SetGunStuff(player:getPrimaryHandItem())

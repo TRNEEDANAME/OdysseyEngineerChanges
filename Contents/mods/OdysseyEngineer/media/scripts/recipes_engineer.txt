@@ -8,4 +8,59 @@ module Base
         Sound:BoxOfRoundsOpenOne,
         Time:15.0,
     }
+
+    recipe Place Dragon Breath 44 in Box
+    {
+        TOCBullets44=40,
+
+        Result:TOCBullets44Box,
+        Sound:BoxOfRoundsOpenOne,
+        Time:15.0,
+    }
+
+        recipe Make Shotgun Shells Mold
+    {
+       IronIngot=30,
+       keep BallPeenHammer,
+       keep Tongs,
+
+       NearItem:Anvil,
+       Result:ShotgunShellsMold,
+       Time:200.0,
+       Category:Smithing,
+       SkillRequired:Blacksmith=8,
+       OnGiveXP:Recipe.OnGiveXP.Blacksmith25,
+       NeedToBeLearn:true,
+    }
+
+    recipe Make 9mm Bullets
+    {
+       IronIngot=22,
+       GunPowder=2,
+       keep 9mmBulletsMold,
+
+       NearItem:Anvil,
+       Result:Bullets9mm=2,
+       Time:180.0,
+       Category:Smithing,
+       SkillRequired:Blacksmith=8,
+       OnGiveXP:Recipe.OnGiveXP.Blacksmith15,
+       NeedToBeLearn:true,
+    }
+
+    recipe Make Shotgun Shells
+    {
+       IronIngot=25,
+       GunPowder=3,
+       keep ShotgunShellsMold,
+       keep Tongs,
+
+       NearItem:Anvil,
+       Result:ShotgunShells=2,
+       Time:180.0,
+       Category:Smithing,
+       SkillRequired:Blacksmith=8,
+       OnGiveXP:Recipe.OnGiveXP.Blacksmith15,
+       NeedToBeLearn:true,
+    }
 }

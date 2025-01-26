@@ -1,0 +1,4 @@
+Recipes_EN {
+    Recipe_Place_Dragon_Breath_Shells_in_Box = "Make Yarn",
+    RecipePlace_Dragon_Breath_44_in_Box = "Make Knitting Needles",
+}

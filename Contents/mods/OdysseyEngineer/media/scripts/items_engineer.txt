@@ -1,6 +1,31 @@
 module Base
 {
 
+    item 9mmBulletsMold
+    {
+        DisplayCategory = Ammo,
+        Weight = 0.5,
+        Type = Normal,
+        DisplayName	= 9mm Bullets Mold,
+        Icon = BulletMold,
+        MetalValue = 15,
+        Tags = EngineerBulletMold,
+        WorldStaticModel = ShotGunShellsMold_Ground, 
+    }
+
+    item ShotgunShellsMold
+    {
+        DisplayCategory = Ammo,
+        Weight = 0.5,
+        Type = Normal,
+        DisplayName	= Shotgun Shells Mold,
+        Icon = BulletMold,
+        MetalValue = 15,
+        Tags = EngineerBulletMold,
+        WorldStaticModel = ShotGunShellsMold_Ground,
+    }
+
+
     /************************* AMMO ******************************/
 
     item TOCBullets44
