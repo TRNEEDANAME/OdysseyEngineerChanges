@@ -1,10 +1,9 @@
 -- Functions
 
 ---@return boolean true if the player has the weapon in their inventory, the gun is the correct type, and he has the correct ammo loaded, 
----@param player IsoPlayer
 ---@param weapon HandWeapon
 --- We check that the current weapon is a gun, and that the ammoType is correct
-function TOCCheckGun(player, weapon)
+function TOCCheckGun(weapon)
     --- We get the ammoType
     local ammo = weapon:getAmmoType()
     local isAmmoValid = CorrectAmmoType(weapon)
