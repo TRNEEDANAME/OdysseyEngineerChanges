@@ -1,5 +1,20 @@
 VERSION = 1,
 
+SandboxVars.
+SandboxVars.TOC_Engineer.ConditionReduction
+SandboxVars.TOC_Engineer.ChanceToJam
+SandboxVars.TOC_Engineer.PistolFireRadius
+SandboxVars.TOC_Engineer.ReloadLevel
+SandboxVars.TOC_Engineer.ConditionReduction
+SandboxVars.TOC_Engineer.BonusConditionReductionLowLevel
+SandboxVars.TOC_Engineer.BonusConditionReductionHighLevel
+SandboxVars.TOC_Engineer.AimingLevel
+SandboxVars.TOC_Engineer.PistolFireRadius
+SandboxVars.TOC_Engineer.ShotgunFireRadius
+SandboxVars.TOC_Engineer.EngineerRecipes
+SandboxVars.TOC_Engineer.EngineerProfession
+SandboxVars.TOC_Engineer.EngineersProfList
+
 option OdysseySOTOChanges.OdysseyRPOutdoorsmanBoredomReduction
 {
     type = double,
