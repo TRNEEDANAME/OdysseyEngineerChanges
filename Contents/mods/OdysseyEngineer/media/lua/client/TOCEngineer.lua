@@ -36,7 +36,7 @@ end
 
 ---@param weapon HandWeapon
 --- Make the gun jam, reduce condition by `SandboxVars.TOC.ConditionReduction` amount
-function SetGunStuff(weapon)
+function SetGunStuff(weapon, bonusReduction)
     --- Set the gun to be jammed
     weapon:setJammed(true)
     local condition = weapon:getCondition()
@@ -44,7 +44,7 @@ function SetGunStuff(weapon)
     if (condition < SandboxVars.TOC.ConditionReduction) then
         weapon:setCondition(0)
     else
-        weapon:setCondition(condition - SandboxVars.TOC.ConditionReduction)
+        weapon:setCondition(condition - (SandboxVars.TOC.ConditionReduction + bonusReduction))
     end
 end
 
@@ -71,12 +71,12 @@ function StartFunc(player, zombie)
     if (TOCCheckGun(player, weapon) and CorrectAmmoType(weapon)) then
         if (reloadLevel < SandboxVars.TOC.ReloadLevel) then
             --- We set the gun to be jammed
-            SetGunStuff(player:getPrimaryHandItem())
+            SetGunStuff(player:getPrimaryHandItem(), SandboxVars.TOC_Engineer.BonusConditionReductionLowLevel)
         --- Else, only a certain chance to jamm
         else
             local HundredChance = ZombRand(100)
             if (HundredChance <= SandboxVars.TOC.ChanceToJam) then
-                SetGunStuff(player:getPrimaryHandItem())
+                SetGunStuff(player:getPrimaryHandItem(), SandboxVars.TOC_Engineer.BonusConditionReductionHighLevel)
             end
         end
 

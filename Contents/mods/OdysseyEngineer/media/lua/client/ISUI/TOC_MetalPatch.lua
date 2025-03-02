@@ -1,6 +1,3 @@
--- You don't need to use 'requires' for vanilla files in Zomboid, since all vanilla functions are stored globally as far as I'm aware. 
--- So you can just slap this in any old Lua file and it should work
-
 -- Store the original function for compatibility.
 local original_doClothingPatchMenu = ISInventoryPaneContextMenu.doClothingPatchMenu
 
